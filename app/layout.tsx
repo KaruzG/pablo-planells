@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "Pablo Planells",
@@ -16,6 +17,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+        <Nav></Nav>
         {children}
       </body>
     </html>

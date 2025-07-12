@@ -28,3 +28,8 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* For the nav */
+.bg-white-gradient {
+  background: linear-gradient(180deg, var(--white, #FFF) 18.75%, rgba(255,255,255,0) 100%);
+}
