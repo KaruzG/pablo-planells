@@ -35,3 +35,45 @@ body {
 .bg-white-gradient {
   background: linear-gradient(180deg, var(--white, #FFF) 18.75%, rgba(255,255,255,0) 100%);
 }
+
+.timeline-horizontal-right-after::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: 100%;
+  width: 225px;
+  height: 2px;
+  background: var(--color-black);
+  z-index: -10;
+  @media screen and (max-width: 768px) {
+    width: 120px; 
+  }
+}
+
+.timeline-horizontal-dot::before {
+  content: ""; /* Maybe add svg of figma */
+  position: absolute;
+  border-radius: 100%;
+  border: #DFDA44 2px dashed;
+  top: 1.56rem; /* Odly specific to center to R/L line */
+  left: 100%;
+  right: 100%;
+  width: 15px;
+  height: 15px;
+  background: var(--color-black);
+  transform: translate(-50%, -50%);
+}
+
+.timeline-horizontal-left-after::after {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  right: 100%;
+  width: 225px;
+  height: 2px;
+  background: var(--color-black);
+  z-index: -10;
+  @media screen and (max-width: 768px) {
+    width: 120px; 
+  }
+}
