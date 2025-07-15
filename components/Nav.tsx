@@ -15,9 +15,9 @@ const Nav = () => {
     return (
         <nav className={styles.nav}>
             <ul className={styles.list}>
-                <li className={styles.listItem} style={isActive("/")}><Link href="/">Home</Link></li>
-                <li className={styles.listItem} style={isActive("/about")}><Link href="/about">About</Link></li>
-                <li className={styles.listItem} style={isActive("/contact")}><Link href="/contact">Contact</Link></li>
+                <li className={styles.listItem} style={isActive("/proyects")}><Link href="/proyects">PROYECTOS</Link></li>
+                <li className={styles.listItem} style={isActive("/")}><Link href="/">INICIO</Link></li>
+                <li className={styles.listItem} style={isActive("/contact")}><Link href="/contact">CONTACTO</Link></li>
             </ul>
         </nav>
     )
