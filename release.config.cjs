@@ -1,5 +1,6 @@
 module.exports = {
-    branches: ['main'],
+    branches: ['master'],
+    repositoryUrl: 'https://github.com/KaruzG/pablo-planells',
     plugins: [
       '@semantic-release/commit-analyzer',
       '@semantic-release/release-notes-generator',
