@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import TimelineBox from "./TimelineBox";
 import TimelineLine from "./TimelineLine";
 
@@ -14,19 +15,19 @@ const Timeline = () => {
         {timelineEvents.map((event, index) => {
           if (index % 2 === 0) {
             return (
-              <>
+              <Fragment key={index}>
                 <li></li>
                 <TimelineLine position="right" />
                 <TimelineBox timelineEvent={event}/>
-              </>
+              </Fragment>
             );
           } else {
             return (
-              <>
+              <Fragment key={index}>
                 <TimelineBox timelineEvent={event}/>
                 <TimelineLine position="left" />
                 <li></li>
-              </>
+              </Fragment>
             );
           }
         })}
