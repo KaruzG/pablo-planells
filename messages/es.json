@@ -1,0 +1,10 @@
+{
+  "nav": {
+    "projects": "Proyectos",
+    "home": "Inicio",
+    "contact": "Contacto"
+  },
+  "timeline": {
+    "title": "Mi Historia"
+  }
+}

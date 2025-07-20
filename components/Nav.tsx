@@ -1,6 +1,7 @@
 "use client"
 import Link from "next/link"
 import { usePathname } from "next/navigation";
+import {useTranslations} from 'next-intl';
 
 const styles = {
     nav: "bg-white-gradient",
@@ -11,13 +12,14 @@ const styles = {
 const Nav = () => {
     const pathname = usePathname();
     const isActive = (path: string) => pathname === path ? {fontWeight: "bold", scale: 1, cursor: "default"} : undefined;
+    const t = useTranslations('nav');
 
     return (
         <nav className={styles.nav}>
             <ul className={styles.list}>
-                <li className={styles.listItem} style={isActive("/proyects")}><Link href="/proyects">PROYECTOS</Link></li>
-                <li className={styles.listItem} style={isActive("/")}><Link href="/">INICIO</Link></li>
-                <li className={styles.listItem} style={isActive("/contact")}><Link href="/contact">CONTACTO</Link></li>
+                <li className={styles.listItem} style={isActive("/proyects")}><Link href="/proyects">{t('projects')}</Link></li>
+                <li className={styles.listItem} style={isActive("/")}><Link href="/">{t('home')}</Link></li>
+                <li className={styles.listItem} style={isActive("/contact")}><Link href="/contact">{t('contact')}</Link></li>
             </ul>
         </nav>
     )
