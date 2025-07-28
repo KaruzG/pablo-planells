@@ -2,12 +2,13 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 import {useTranslations} from 'next-intl';
+import { rubikBubbles } from "@/fonts/fonts"; 
 
 const styles = {
-    nav: "bg-white-gradient",
+    nav: `bg-white-gradient fixed top-0 left-0 w-full z-50`,
     list: "flex flex-row justify-around p-4 uppercase max-w-5xl mx-auto pt-6",
-    listItem: "hover:font-bold hover:scale-105 hover:text-blue transition-all duration-200",
-}
+    listItem: `hover:font-bold hover:scale-105 transition-all duration-200 ${rubikBubbles.className} text-xl md:text-2xl text-white text-shadow-md`,
+};
 
 const Nav = () => {
     const pathname = usePathname();
