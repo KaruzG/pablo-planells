@@ -33,7 +33,11 @@ body {
 
 /* For the nav */
 .bg-white-gradient {
-  background: linear-gradient(180deg, #ffffff60 18.75%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(180deg, #ffffff23 18.75%, rgba(255,255,255,0) 100%);
+}
+
+.bg-white-gradient-inverse {
+  background: linear-gradient(180deg, #ffffff00 18.75%, #f0eeee 100%);
 }
 
 .timeline-horizontal-right-after::after {
