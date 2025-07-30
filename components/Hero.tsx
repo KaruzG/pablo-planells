@@ -1,4 +1,4 @@
-import { Room3d } from "./Room3d";
+import { Room3d } from "./3dRoom/Room3d";
 
 const Hero = () => {
   return (
