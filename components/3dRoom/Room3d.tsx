@@ -7,8 +7,8 @@ export const Room3d = () => {
     return (
         <>
          <Canvas>
-            <ambientLight intensity={1.5}  />
-            <pointLight position={[10, 10, 10]} />
+            <pointLight color="#ffecbd" intensity={110} position={[-2, 5, 5]} castShadow />
+            <ambientLight color="ffffff" intensity={0.5} />
             <Room />
             <Orbit />
          </Canvas>
