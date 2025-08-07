@@ -6,5 +6,18 @@
   },
   "timeline": {
     "title": "Mi Historia"
+  },
+  "contact": {
+    "title": "CONTACTO",
+    "form": {
+      "title": "¡Contacta conmigo!",
+      "name": "Nombre",
+      "email": "Email",
+      "message": "Mensaje",
+      "submit": "Enviar",
+      "description": "¿Necesitas ayuda con algo? \n¿Quieres hablar de un proyecto? \nContáctame y responderé lo más rápido posible."
+    },
+    "description": "Crea porque no sabe no hacerlo, y porque disfrutar el proceso es parte del todo.",
+    "role": "Diseñador Patronador"
   }
 }

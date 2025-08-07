@@ -6,5 +6,18 @@
   },
   "timeline": {
     "title": "My History"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "form": {
+      "title": "Contact with me!",
+      "name": "Name",
+      "email": "Email",
+      "message": "Body",
+      "submit": "Submit",
+      "description": "Do you need help with something? Want to talk about a project? Contact me, and I'll respond as quickly as possible."
+    },
+    "description": "He creates because he doesn’t know how not to, and because enjoying the process is part of it all.",
+    "role": "Designer and Pattern Maker"
   }
 }
