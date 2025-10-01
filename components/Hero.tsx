@@ -1,7 +1,13 @@
+"use client";
 import { Suspense } from "react";
 import { Room3d } from "./3dRoom/Room3d";
+import { useWeatherData } from "@/hooks/useWeatherData";
 
 const Hero = () => {
+
+  const weatherData = useWeatherData();
+  weatherData.then(data => console.log(data));
+
   return (
     <section className={`flex relative items-center justify-center h-screen bg-size-[auto_600px] md:bg-size-[auto_1100px] bg-top-left md:bg-center bg-[url('/images/cloudBG.webp')]`}>
       <Suspense fallback={<div className="w-full h-full flex items-center justify-center">Loading...</div>}>
