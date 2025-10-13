@@ -1,10 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-
-type ResponseData = {
-    message?: string;
-    error?: string;
-}
-
 export async function POST(req: Request) {
   try {
     console.log('API Route /api/weather/ called - app router POST')
