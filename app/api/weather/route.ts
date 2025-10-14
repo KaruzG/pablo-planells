@@ -20,3 +20,5 @@ export async function POST(req: Request) {
     })
   }
 }
+
+// Te quedas que no quieres hacer esto por cliente peor en server no va pq en local no hay ip y hay que hacer algo de edge next npi
