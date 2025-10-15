@@ -1,4 +1,5 @@
 "use client"
+import processWeatherData from "@/utils/weatherProcessor";
 import { useEffect, useState } from "react";
 
 type Coords = { lat: number; lon: number } | null;
@@ -11,6 +12,8 @@ export default function useWeatherData(coords: Coords) {
   useEffect(() => {
     if (!coords) {
       setData(null);
+      setLoading(false);
+      setError(null);
       return;
     }
 
@@ -34,14 +37,25 @@ export default function useWeatherData(coords: Coords) {
 
         const json = await res.json();
         if (!cancelled) setData(json);
+        return json;
       } catch (err: any) {
-        if (!cancelled) setError(err);
+        if (!cancelled) setError(err instanceof Error ? err : new Error(String(err)));
+        throw err;
       } finally {
         if (!cancelled) setLoading(false);
       }
     };
 
-    fetchWeather();
+    (async () => {
+      try {
+        const fetched = await fetchWeather();
+        if (fetched) {
+          setData(processWeatherData(fetched))
+        }
+      } catch (e) {
+        console.error("Weather fetch or parsing failed:", e);
+      }
+    })();
 
     return () => {
       cancelled = true;
