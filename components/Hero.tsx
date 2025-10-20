@@ -1,4 +1,6 @@
-import { Suspense } from "react";
+"use client";
+
+import React, { Suspense } from "react";
 import { Room3d } from "./3dRoom/Room3d";
 
 const Hero = () => {
