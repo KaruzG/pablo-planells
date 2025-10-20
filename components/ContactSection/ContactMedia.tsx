@@ -9,7 +9,7 @@ const ContactMedia = () => {
   return (
     <div className={`flex flex-col relative justify-end p-7 w-1/2 h-full text-white rounded-md z-0`}>
       <Suspense fallback={<div className="w-full h-full bg-gray-200 animate-pulse rounded-md"></div>}>
-        <video muted autoPlay loop className="absolute top-0 left-0 w-full h-full object-cover rounded-md z-[-1]">
+        <video muted autoPlay loop playsInline className="absolute top-0 left-0 w-full h-full object-cover rounded-md z-[-1]">
           <source src="/resources/recap.mp4" type="video/mp4" />
         </video>
       </Suspense>
