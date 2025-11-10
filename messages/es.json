@@ -19,5 +19,11 @@
     },
     "description": "Crea porque no sabe no hacerlo, y porque disfrutar el proceso es parte del todo.",
     "role": "Diseñador Patronador"
+  },
+  "projects": {
+    "header1": "TRABAJOS",
+    "header2": "PROYECTOS",
+    "header3": "ROPA",
+    "footer": "Ver más"
   }
 }

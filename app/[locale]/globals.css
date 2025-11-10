@@ -7,6 +7,7 @@
   --white: #FFFFFF;
   --blue: #080F2C;
   --yellow: #DFDA44;
+  --grey: #252525;
 
   font-family: var(--font-roboto-mono), monospace;
 }
@@ -19,6 +20,7 @@
   --color-white: var(--white);  
   --color-blue: var(--blue);
   --color-yellow: var(--yellow);
+  --color-grey: var(--grey);
 
   /* FONTS */
   --font-sans: var(--font-geist-sans);
