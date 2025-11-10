@@ -19,5 +19,11 @@
     },
     "description": "He creates because he doesn’t know how not to, and because enjoying the process is part of it all.",
     "role": "Designer and Pattern Maker"
+  },
+  "projects": {
+    "header1": "WORKS",
+    "header2": "PROJECTS",
+    "header3": "CLOTHES",
+    "footer": "See more"
   }
 }

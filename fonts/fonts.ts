@@ -1,5 +1,6 @@
 import { Roboto_Mono } from "next/font/google";
 import { Rubik_Bubbles } from "next/font/google";
+import { Rubik_Mono_One } from "next/font/google";
 
 export const robotoMono = Roboto_Mono({
   subsets: ["latin"],
@@ -11,3 +12,9 @@ export const rubikBubbles = Rubik_Bubbles({
   subsets: ["latin"],
   variable: "--font-rubik-bubbles",
 }); 
+
+export const rubikMonoOne = Rubik_Mono_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-rubik-mono-one",
+});
