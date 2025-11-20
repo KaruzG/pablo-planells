@@ -1,11 +1,13 @@
+"use client"
+
 import Link from "next/link";
 import { FaInstagram, FaTiktok} from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 type Props = {
   size?: "sm" | "md" | "lg";
+  className?: string;
 };
-
 
 const SocialMedia = ( params:Props ) => {
   let iconSize = {instagram: 50, tiktok: 45, email: 52};
@@ -23,7 +25,7 @@ const SocialMedia = ( params:Props ) => {
     }
 
   return (
-    <ul className="flex flex-row justify-center gap-6 lg:justify-end">
+    <ul className={params.className + " flex flex-row justify-center"}>
       <li>
         <Link href="https://www.instagram.com/pablo_plga/" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={iconSize.instagram} />
