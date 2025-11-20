@@ -25,7 +25,7 @@ const SocialMedia = ( params:Props ) => {
     }
 
   return (
-    <ul className={params.className + " flex flex-row justify-center"}>
+    <ul className={params.className + " flex flex-row"}>
       <li>
         <Link href="https://www.instagram.com/pablo_plga/" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={iconSize.instagram} />
