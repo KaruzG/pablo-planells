@@ -22,6 +22,9 @@ export default async function LocaleLayout({ children, params }: Readonly<{ chil
 
   return (
     <html lang={locale}>
+      <head>
+        <link rel="icon" href="/images/favicon.svg" sizes="any" />
+      </head>
       <body className={`antialiased ${robotoMono.variable}`}>
         <NextIntlClientProvider>
           <Nav></Nav>
