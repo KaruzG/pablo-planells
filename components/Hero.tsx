@@ -9,7 +9,7 @@ const Hero = () => {
       <Suspense fallback={<div className="w-full h-full flex items-center justify-center">Loading...</div>}>
         <Room3d />
       </Suspense>
-      <div className="absolute bg-white-gradient-inverse bottom-0 w-screen h-8" />
+      <div className="absolute bg-white-gradient-inverse bottom-0 w-full h-8" />
     </section>
   );
 };
