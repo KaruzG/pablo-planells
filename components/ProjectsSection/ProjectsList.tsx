@@ -1,11 +1,13 @@
-import Image from "next/image";
+import ProjectCard from "./ProjectCard/ProjectCard";
 
 const ProjectsList = () => {
   return (
-    <ul className="flex flex-wrap lg:gap-15 gap-5 justify-center py-10">
-      <li><Image className="bg-white rounded-3xl" src="/images/JACKET 1.png" alt="Jacket" width={300} height={500}></Image></li>
-      <li><Image className="bg-white rounded-3xl" src="/images/JACKET 2.png" alt="Jacket" width={300} height={500}></Image></li>
-      <li><Image className="bg-white rounded-3xl" src="/images/TOTE 1.png" alt="Jacket" width={300} height={500}></Image></li>
+    <ul className="flex flex-row lg:gap-15 gap-5 pl-5 md:pl-15 pr-5 justify-start py-10 overflow-x-scroll">
+      <li><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
+      <li><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
+      <li><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
+      <li><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
+      <li><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
     </ul>
   )
 };
