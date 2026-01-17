@@ -9,10 +9,28 @@ export const springUp: Variants = {
             type: "spring",
             bounce: 0.1,
             duration: 1.2,
+            delay: 0.2,
         },
     },
     initial: {
-        y: 150,
+        y: 350,
+    },
+};
+
+export const springDown: Variants = {
+    whileInView: {
+        opacity: 1,
+        rotate: 0,
+        y: 0,
+        transition: {
+            type: "spring",
+            bounce: 0.1,
+            duration: 1.2,
+            delay: 0.2,
+        },
+    },
+    initial: {
+        y: -350,
     },
 };
 

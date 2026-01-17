@@ -8,7 +8,7 @@ import { springLeft } from "@/animations/onViewAnimations";
 const SubHeroImage = () => {
     
     return (
-        <motion.div viewport={{ once: true }} { ...springLeft } className="w-96 md:w-[500px] mb-6">
+        <motion.div viewport={{ once: true, margin: "0px 400px 0px 0px" }} { ...springLeft } className="w-96 md:w-[500px] mb-6">
             <Image className="rounded-2xl" layout="responsive" src={pabloSubHero} height={300} width={300} alt="Photo of Pablo Sewing"></Image>
         </motion.div>
     )
