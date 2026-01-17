@@ -5,7 +5,6 @@ import {useTranslations} from 'next-intl';
 import { rubikBubbles } from "@/fonts/fonts"; 
 import { motion } from "framer-motion";
 import { springDown } from "@/animations/onViewAnimations";
-import { delay } from "motion";
 
 const styles = {
     nav: `bg-white-gradient absolute top-0 left-0 w-full z-50`,
