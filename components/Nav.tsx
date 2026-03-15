@@ -3,6 +3,8 @@ import Link from "next/link"
 import { usePathname } from "next/navigation";
 import {useTranslations} from 'next-intl';
 import { rubikBubbles } from "@/fonts/fonts"; 
+import { motion } from "framer-motion";
+import { springDown } from "@/animations/onViewAnimations";
 
 const styles = {
     nav: `bg-white-gradient absolute top-0 left-0 w-full z-50`,
@@ -18,9 +20,9 @@ const Nav = () => {
     return (
         <nav className={styles.nav}>
             <ul className={styles.list}>
-                <li className={styles.listItem} style={isActive("/proyects")}><Link href="/proyects">{t('projects')}</Link></li>
-                <li className={styles.listItem} style={isActive("/")}><Link href="/">{t('home')}</Link></li>
-                <li className={styles.listItem} style={isActive("/contact")}><Link href="/contact">{t('contact')}</Link></li>
+                <motion.li viewport={{ once: true, margin: "2000px 0px 0px 0px" }} {...springDown} className={styles.listItem} style={isActive("/proyects")}><Link href="/proyects">{t('projects')}</Link></motion.li>
+                <motion.li viewport={{ once: true, margin: "2000px 0px 0px 0px" }} {...springDown} className={styles.listItem} style={isActive("/")}><Link href="/">{t('home')}</Link></motion.li>
+                <motion.li viewport={{ once: true, margin: "2000px 0px 0px 0px" }} {...springDown} className={styles.listItem} style={isActive("/contact")}><Link href="/contact">{t('contact')}</Link></motion.li>
             </ul>
         </nav>
     )
