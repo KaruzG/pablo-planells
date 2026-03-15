@@ -25,26 +25,20 @@ const SocialMedia = ( params:Props ) => {
       iconSize = {instagram: 50, tiktok: 45, email: 52};
       break;
     }
-    
-    let animation = {}
-
-    if (params.animation) {
-      // pon animaciones aqui
-    }
 
   return (
     <ul className={params.className + " flex flex-row"}>
-      <motion.li>
+      <motion.li className="hover:scale-110 transition-transform duration-300">
         <Link href="https://www.instagram.com/pablo_plga/" target="_blank" rel="noopener noreferrer">
           <FaInstagram size={iconSize.instagram} />
         </Link>
       </motion.li>
-      <motion.li>
+      <motion.li className="hover:scale-110 transition-transform duration-300">
         <Link href="https://www.tiktok.com/@pablo_plga" target="_blank" rel="noopener noreferrer">
           <FaTiktok size={iconSize.tiktok} />
         </Link>
       </motion.li>
-      <motion.li>
+      <motion.li className="hover:scale-110 transition-transform duration-300">
         <Link href="mailto:pablopla01@gmail.com" target="_blank" rel="noopener noreferrer">
           <MdOutlineEmail size={iconSize.email} />
         </Link>
