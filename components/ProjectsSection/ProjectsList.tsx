@@ -19,10 +19,10 @@ const ProjectsList = () => {
   };
 
   return (
-    <div className="relative w-full group">
+    <div className="relative w-full group/list mx-auto">
       <button 
         onClick={() => scroll("left")}
-        className="absolute left-2 md:left-5 top-1/2 -translate-y-1/2 z-10 bg-white/90 p-2 md:p-3 rounded-full shadow-lg text-black hover:bg-white transition-all cursor-pointer opacity-0 group-hover:opacity-100 focus:opacity-100"
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-10 backdrop-blur-md bg-white/60 p-3 md:p-4 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/50 text-gray-800 hover:bg-white hover:scale-110 transition-all duration-300 cursor-pointer opacity-0 group-hover/list:opacity-100 focus:opacity-100"
         aria-label="Scroll left"
       >
         <FaChevronLeft size={20} />
@@ -30,19 +30,21 @@ const ProjectsList = () => {
 
       <ul 
         ref={scrollContainerRef}
-        className="flex flex-row snap-x snap-mandatory lg:gap-15 gap-5 pl-5 md:pl-15 pr-5 justify-start py-10 overflow-x-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] scroll-smooth"
+        className="flex flex-row snap-x snap-mandatory lg:gap-12 gap-6 justify-start py-12 overflow-x-scroll [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] scroll-smooth"
       >
-        <li className="snap-center"><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
-        <li className="snap-center"><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
-        <li className="snap-center"><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
-        <li className="snap-center"><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
-        <li className="snap-center"><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
-        <li className="snap-center"><ProjectCard className="bg-white rounded-xl min-w-3xs md:min-w-xs" imgSrc="/images/JACKET 2.png" width={300} height={300} altText="Jacket"></ProjectCard></li>
+        <li className="shrink-0 w-4 md:w-12"></li>
+        <li className="snap-center drop-shadow-lg shrink-0"><ProjectCard className="w-[300px] h-[350px]" imgSrc="/images/JACKET 2.png" width={300} height={350} altText="Jacket" projectTitle="Urban Jacket"></ProjectCard></li>
+        <li className="snap-center drop-shadow-lg shrink-0"><ProjectCard className="w-[300px] h-[350px]" imgSrc="/images/JACKET 2.png" width={300} height={350} altText="Jacket" projectTitle="Urban Jacket"></ProjectCard></li>
+        <li className="snap-center drop-shadow-lg shrink-0"><ProjectCard className="w-[300px] h-[350px]" imgSrc="/images/JACKET 2.png" width={300} height={350} altText="Jacket" projectTitle="Urban Jacket"></ProjectCard></li>
+        <li className="snap-center drop-shadow-lg shrink-0"><ProjectCard className="w-[300px] h-[350px]" imgSrc="/images/JACKET 2.png" width={300} height={350} altText="Jacket" projectTitle="Urban Jacket"></ProjectCard></li>
+        <li className="snap-center drop-shadow-lg shrink-0"><ProjectCard className="w-[300px] h-[350px]" imgSrc="/images/JACKET 2.png" width={300} height={350} altText="Jacket" projectTitle="Urban Jacket"></ProjectCard></li>
+        <li className="snap-center drop-shadow-lg shrink-0"><ProjectCard className="w-[300px] h-[350px]" imgSrc="/images/JACKET 2.png" width={300} height={350} altText="Jacket" projectTitle="Urban Jacket"></ProjectCard></li>
+        <li className="shrink-0 w-4 md:w-12"></li>
       </ul>
 
       <button 
         onClick={() => scroll("right")}
-        className="absolute right-2 md:right-5 top-1/2 -translate-y-1/2 z-10 bg-white/90 p-2 md:p-3 rounded-full shadow-lg text-black hover:bg-white transition-all cursor-pointer opacity-0 group-hover:opacity-100 focus:opacity-100"
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-10 backdrop-blur-md bg-white/60 p-3 md:p-4 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-white/50 text-gray-800 hover:bg-white hover:scale-110 transition-all duration-300 cursor-pointer opacity-0 group-hover/list:opacity-100 focus:opacity-100"
         aria-label="Scroll right"
       >
         <FaChevronRight size={20} />
