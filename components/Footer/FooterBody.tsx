@@ -1,30 +1,31 @@
 import { useTranslations } from "next-intl";
 import SocialMedia from "../SocialMedia"
-import Link from "next/link"
 import logo from "@/public/resources/logo.svg";
 import Image from "next/image";
+import SectionTitle from "./SectionTitle";
+import FooterLink from "./FooterLink";
 
 const FooterBody = () => {
     const tnav = useTranslations('nav');
 
     return (
-        <section className="flex flex-row md:max-w-2/3 md:mx-auto md:justify-between md:gap-40 lg:gap-70">
-            <div>
-                <ul className="flex flex-col gap-6 mb-10">
-                    <li className="flex flex-col justify-items-start">
-                        <p className="text-xl italic mb-2 capitalize">social Media</p>
-                        <SocialMedia className="gap-2 pl-1" size="sm"/>
-                    </li>
-                    <li className="flex flex-col">
-                        <p className="italic text-xl mb-1 capitalize">pages</p>
-                        <Link className="underline pl-2" href="/proyects">{tnav('projects')}</Link>
-                        <Link className="underline pl-2" href="/">{tnav('home')}</Link>
-                        <Link className="underline pl-2" href="/contact">{tnav('contact')}</Link>
-                    </li>
-                </ul>
+        <section className="flex flex-col-reverse md:flex-row md:max-w-5xl md:mx-auto md:w-full md:justify-between items-center gap-12 md:gap-8">
+            <div className="flex flex-col md:flex-row gap-12 md:gap-24 text-center md:text-left">
+                <div className="flex flex-col items-center md:items-start">
+                    <SectionTitle>Social Media</SectionTitle>
+                    <SocialMedia className="gap-4" size="sm"/>
+                </div>
+                <div className="flex flex-col items-center md:items-start">
+                    <SectionTitle>Pages</SectionTitle>
+                    <div className="flex flex-col gap-3">
+                        <FooterLink href="/proyects">{tnav('projects')}</FooterLink>
+                        <FooterLink href="/">{tnav('home')}</FooterLink>
+                        <FooterLink href="/contact">{tnav('contact')}</FooterLink>
+                    </div>
+                </div>
             </div>
-            <div className="flex mx-auto">
-                <Image src={logo} height={120} alt="Logo" />
+            <div className="flex">
+                <Image src={logo} height={100} alt="Logo" className="opacity-90 hover:opacity-100 transition-opacity duration-300" />
             </div>
         </section>
     )
