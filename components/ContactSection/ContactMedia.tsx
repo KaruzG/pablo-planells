@@ -14,7 +14,7 @@ const ContactMedia = () => {
         </video>
       </Suspense>
         <div className="flex flex-col gap-4 text-shadow-lg/20">
-            <p className="mt-auto font-bold text-md leading-4.5">{t('description')}</p>
+            <p className="mt-auto font-bold text-md leading-4.5 hidden md:block">{t('description')}</p>
             <div className="flex flex-row h-fit justify-between flex-1/2 items-end">
                 <p className="flex flex-col font-bold">Pablo Planells <span className="font-normal text-sm">{t('role')}</span></p>
                 <Image src={logo} height={40} alt="Logo" />
