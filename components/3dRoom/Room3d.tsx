@@ -13,7 +13,7 @@ export const Room3d = () => {
          <Canvas className="touch-pan-y">
             <pointLight color="#ffecbd" intensity={110} position={[-2, 5, 5]} castShadow />
             <ambientLight color="ffffff" intensity={0.5} />
-            <CustomRotation rotation={[0.6, 0, 0]} azimuth={[0, 1]}>
+            <CustomRotation rotation={[0.6, 0, 0]} azimuth={[-0.4, 0.4]}>
                 <Room />
             </CustomRotation>
          </Canvas>
